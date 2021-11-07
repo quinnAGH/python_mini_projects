@@ -1,0 +1,40 @@
+print("Welcome to my Vocab Quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's Play :)")
+score = 0
+
+answer = input("What is a list of steps to finish a task?  ")
+if answer.lower() == "algorithm":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What is a way of representing information using only two option? ")
+if answer.lower() == "binary":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What is a single unit of information in a computer, usually a 0 or a 1? ")
+if answer.lower() == "bit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("What is the language that programmers create and use to tell a computer what to do? ")
+if answer.lower() == "code":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+print("You got " +str(score) + " questions correct! ")
+print("You got " + str((score / 4) * 100) + "%.")
